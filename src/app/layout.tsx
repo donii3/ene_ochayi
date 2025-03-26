@@ -47,8 +47,9 @@ export default function RootLayout({
 
       <body suppressHydrationWarning>
         <Header />
-        <main>{children}</main>
-        <Footer />
+        <main id="bringer-main">{children}
+          <Footer />
+        </main>
 
         {/* JavaScript Files */}
         <Script src="/js/lib/jquery.min.js" strategy="beforeInteractive" />
