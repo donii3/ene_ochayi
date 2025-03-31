@@ -3,6 +3,7 @@ import Marquee from "./components/marquee";
 import Title from "./components/title";
 import AboutSection from "./components/about/aboutSection";
 import Creativity from "./components/creativity";
+import Portfolio from "./components/portfolio";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Title />
       <AboutSection />
       <Creativity />
+      <Portfolio />
     </div>
   );
 }
