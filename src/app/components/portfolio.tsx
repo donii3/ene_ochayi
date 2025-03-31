@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 const Portfolio = () => {
@@ -9,7 +10,7 @@ const Portfolio = () => {
       <div className="bringer-column-item bringer-masked-block">
         {/* Media */}
         <div className="bringer-masked-media bringer-parallax-media">
-          <img className="bringer-lazy" src="/img/home/rally.jpg" alt="Campaign Rally" />
+          <Image src="/img/home/rally.jpg" alt="Campaign Rally" width={1200} height={1200} />
         </div>
         {/* Content */}
         <div className="bringer-masked-content at-bottom-center">

@@ -13,7 +13,7 @@ const Title = () => {
                     </div>
                     <p className="bringer-large-text">
                         A creative and experienced photographer and visual storyteller. I bring to limelight creative and heartfelt stories that are not
-                        visible to other people's default perspective of life.
+                        visible to other people&apos;s default perspective of life.
                     </p>
                 </div>
                 {/* First Image */}
