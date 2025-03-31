@@ -3,6 +3,19 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const socialLinks = [
+  { href: "https://www.linkedin.com/in/ene-ochayi-712a83207", icon: "bi bi-linkedin", name: "LinkedIn" },
+  { href: "https://www.facebook.com/share/1AGcAPzRae/?mibextid=wwXIfr", icon: "bi bi-facebook", name: "Facebook" },
+  { href: "https://www.instagram.com/enny_ochayi", icon: "bi bi-instagram", name: "Instagram" },
+  { href: "https://x.com/itz_ennyochayi?s=21", icon: "bi bi-twitter", name: "Twitter" },
+  { href: "https://youtube.com/@eneochayi1?si=gDQ9_VCJQPVGTvCG", icon: "bi bi-youtube", name: "YouTube" }
+];
+
+const handleLinkClick = (url: string) => {
+  console.log(`Navigating to: ${url}`);
+  window.open(url, "_blank", "noopener,noreferrer");
+};
+
 const Footer = () => {
   return (
     <footer id="bringer-footer">
@@ -17,11 +30,13 @@ const Footer = () => {
                 <p>As a Photographer and visual storyteller, I shine a light on untold stories.</p>
                 <span className="bringer-label">Follow Me:</span>
                 <ul className="bringer-socials-list">
-                  <li><a href="#" target="_blank"><span className="bi bi-linkedin"></span></a></li>
-                  <li><a href="#" target="_blank"><span className="bi bi-facebook"></span></a></li>
-                  <li><a href="#" target="_blank"><span className="bi bi-instagram"></span></a></li>
-                  <li><a href="#" target="_blank"><span className="bi bi-twitter"></span></a></li>
-                  <li><a href="#" target="_blank"><span className="bi bi-youtube"></span></a></li>
+                  {socialLinks.map((link, index) => (
+                    <li key={index}>
+                      <a onClick={() => handleLinkClick(link.href)} className="social-button">
+                        <span className={link.icon}></span>
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

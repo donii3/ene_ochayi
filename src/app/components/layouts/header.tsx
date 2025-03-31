@@ -18,21 +18,27 @@ const Header = () => {
                 <nav className="bringer-nav">
                     <ul className="main-menu">
                         <li className="current-menu-parent">
+
+                            {/* Home */}
                             <Link href="/">Home</Link>
-                            <ul className="sub-menu">
+                            {/* <ul className="sub-menu">
                                 <li><Link href="/">Home 01</Link></li>
                                 <li><Link href="/home02">Home 02</Link></li>
                                 <li><Link href="/home03">Home 03</Link></li>
-                            </ul>
+                            </ul> */}
                         </li>
+
+                        {/* About Us */}
                         <li>
-                            <Link href="#">About Us</Link>
+                            <Link href="#">About</Link>
                             <ul className="sub-menu">
-                                <li><Link href="/about-us">About Us</Link></li>
+                                {/* <li><Link href="/about-us">About Us</Link></li> */}
                                 <li><Link href="/about-me">About Me</Link></li>
                             </ul>
                         </li>
-                        <li>
+
+                        {/* Pages */}
+                        {/* <li>
                             <Link href="#">Pages</Link>
                             <ul className="sub-menu">
                                 <li><Link href="/services">Our Services</Link></li>
@@ -41,18 +47,20 @@ const Header = () => {
                                 <li><Link href="/faq">F.A.Q.</Link></li>
                                 <li><Link href="/testimonials">Testimonials</Link></li>
                             </ul>
-                        </li>
+                        </li> */}
+
+                        {/* Portfolio */}
                         <li>
                             <Link href="#">Portfolio</Link>
                             <ul className="sub-menu">
-                                <li><Link href="/portfolio-infinite-list">Infinite List</Link></li>
+                                {/* <li><Link href="/portfolio-infinite-list">Infinite List</Link></li>
                                 <li><Link href="/portfolio-slider">Slider</Link></li>
                                 <li><Link href="/portfolio-column">Column Cards</Link></li>
                                 <li><Link href="/portfolio-grid">Classic Grid</Link></li>
-                                <li className="bringer-menu-divider"></li>
+                                <li className="bringer-menu-divider"></li> */}
                                 <li><Link href="/portfolio-post01">Portfolio Details 01</Link></li>
-                                <li><Link href="/portfolio-post02">Portfolio Details 02</Link></li>
-                                <li><Link href="/portfolio-post03">Portfolio Details 03</Link></li>
+                                {/* <li><Link href="/portfolio-post02">Portfolio Details 02</Link></li>
+                                <li><Link href="/portfolio-post03">Portfolio Details 03</Link></li> */}
                             </ul>
                         </li>
                         <li>
