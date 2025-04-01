@@ -4,6 +4,8 @@ import Title from "./components/title";
 import AboutSection from "./components/about/aboutSection";
 import Creativity from "./components/creativity";
 import Portfolio from "./components/portfolio";
+import Grid from "./components/grid";
+import Approach from "./components/approach";
 
 export default function Home() {
   return (
@@ -14,6 +16,9 @@ export default function Home() {
       <AboutSection />
       <Creativity />
       <Portfolio />
+      <Grid />
+      <Approach />
+      <Marquee />
     </div>
   );
 }

@@ -3,8 +3,8 @@ import Head from "next/head";
 import Script from "next/script";
 import "@/app/globals.css";
 
-import Header from "@/app/components/layouts/header"; // Fixed import path
-import Footer from "@/app/components/layouts/footer"; // Fixed import path
+import Header from "@/app/components/layouts/header";
+import Footer from "@/app/components/layouts/footer";
 
 export const metadata: Metadata = {
   title: "Ene Ochayi - Portfolio-Photography",
@@ -47,9 +47,13 @@ export default function RootLayout({
 
       <body suppressHydrationWarning>
         <Header />
-        <main id="bringer-main">{children}
+        <main id="bringer-main">
+          {children}
           <Footer />
         </main>
+
+        {/* Dynamic Backlight */}
+        <div className="bringer-backlight"></div>
 
         {/* JavaScript Files */}
         <Script src="/js/lib/jquery.min.js" strategy="beforeInteractive" />
