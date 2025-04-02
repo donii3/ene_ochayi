@@ -12,19 +12,18 @@ const Title = () => {
                         </h2>
                     </div>
                     <p className="bringer-large-text">
-                        A creative and experienced photographer and visual storyteller. I bring to limelight creative and heartfelt stories that are not
-                        visible to other people&apos;s default perspective of life.
+                    A passionate photographer and storyteller, I capture and preserve cultural heritage, history, and diverse lifestyles through compelling imagery, challenging misconceptions, and raising awareness.
                     </p>
                 </div>
                 {/* First Image */}
                 <div className="is-small" data-appear="zoom-out" data-delay="100" data-unload="zoom-out">
-                    <Image src="/img/home/abtt1.png" alt="Portfolio" width={1200} height={1200} />
+                    <Image src="/img/home/abt2.png" alt="Portfolio" width={1200} height={1200} />
                 </div>
 
                 {/* Second Image with Masked Content */}
                 <div className="is-small bringer-masked-block" data-appear="zoom-out" data-delay="200" data-unload="zoom-out">
                     <div className="bringer-bento-hero-media bringer-masked-media">
-                        <Image src="/img/home/abt2.png" alt="Portfolio" width={1200} height={1200} />
+                        <Image src="/img/home/abtt.png" alt="Portfolio" width={1200} height={1200} />
                     </div>
                     <div className="bringer-masked-content at-bottom-right">
                         <a href="/portfolio-grid" className="bringer-square-button">
@@ -35,7 +34,7 @@ const Title = () => {
 
                 {/* Third Image */}
                 <div className="is-large" data-appear="fade-left" data-delay="200" data-unload="fade-right">
-                    <Image src="/img/home/abtt.png" alt="Cookie Dough" width={1200} height={1200} />
+                    <Image src="/img/home/ene03.png" alt="Cookie Dough" width={1200} height={1200} />
                 </div>
             </div>
         </section>
