@@ -20,7 +20,7 @@ const Hero = () => {
                     loop={true}
                     className="w-full h-full"
                 >
-                    {[1, 2, 3, 4, 5].map((num) => (
+                    {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
                         <SwiperSlide key={num} className="w-full h-full">
                             <Image
                                 src={`/img/home/h${num}.png`}

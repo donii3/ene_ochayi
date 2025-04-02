@@ -41,7 +41,7 @@ export default function RootLayout({
         />
 
         {/* Favicon */}
-        <link rel="icon" href="/img/favicon.png" sizes="32x32" />
+        <link rel="icon" href="/img/favicon.png" sizes="50x50" />
         <link rel="icon" type="image/png" href="/img/favicon.png" />
       </Head>
 
