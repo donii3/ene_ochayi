@@ -15,7 +15,7 @@ const Grid = () => {
                     </div>
                     <div className="bringer-masked-content at-bottom-right">
                         <p className="bringer-large-text" data-appear="fade-right" data-delay="100">
-                            Let's chat about your ideas. &rarr;
+                            Let&apos;s chat about your ideas. &rarr;
                         </p>
                     </div>
                 </div>
