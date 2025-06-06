@@ -17,7 +17,7 @@ export default function Home() {
       <Creativity />
       <Portfolio />
       <Grid />
-      <Approach />
+      {/* <Approach /> */}
       <Marquee />
     </div>
   );

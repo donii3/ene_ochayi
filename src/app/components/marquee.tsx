@@ -4,7 +4,7 @@ const Marquee = () => {
             <div className="bringer-marquee" data-speed="5000" style={{ backgroundColor: "transparent" }}>
                 <div className="bringer-marquee-inner">
                     <ul className="bringer-marquee-list">
-                        {["Photoshoots", "Photo Editing", "Graphics Designer", "Videographer", "Creative Contents", "Trainings"].map((item, index) => (
+                        {["Photoshoots", "Exhibition", "Story Telling", "Documentary", "Creative Contents", "Trainings"].map((item, index) => (
                             <li key={index}>
                                 <h6>{item}</h6>
                             </li>

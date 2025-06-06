@@ -33,13 +33,6 @@ const Hero = () => {
                     ))}
                 </Swiper>
             </div>
-
-            {/* Info Line */}
-            <div className="w-full text-center py-4 space-y-2 text-lg font-semibold">
-                <div>Worked with over <span className="text-orange-500">400+</span> clients</div>
-                <div>From 2016</div>
-                <div><span className="text-orange-500">3000+</span> Photos Taken</div>
-            </div>
         </section>
     );
 };
