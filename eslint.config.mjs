@@ -14,6 +14,8 @@ const eslintConfig = [
   {
     rules: {
       "react/no-unescaped-entities": "off",
+      "react/react-in-jsx-scope": "off", // if using Next.js with automatic React import
+      // add more rules as needed
     },
   },
 ];
