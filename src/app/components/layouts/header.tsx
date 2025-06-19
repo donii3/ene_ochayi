@@ -30,11 +30,11 @@ const Header = () => {
 
                         {/* About Us */}
                         <li>
-                            <Link href="#">About</Link>
-                            <ul className="sub-menu">
+                            <Link href="/about-me">About</Link>
+                            {/* <ul className="sub-menu"> */}
                                 {/* <li><Link href="/about-us">About Us</Link></li> */}
-                                <li><Link href="/about-me">About Me</Link></li>
-                            </ul>
+                                {/* <li><Link href="">About Me</Link></li> */}
+                            {/* </ul> */}
                         </li>
 
                         {/* Pages */}
