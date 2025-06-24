@@ -27,11 +27,11 @@ export default function AboutMe() {
               <p className="bringer-large-text">A documentary photographer and visual storyteller based in Nigeria, capturing the untold stories of rural life and resilient communities</p>
             </div>
             <div className="is-small" data-appear="zoom-out" data-delay="100" data-unload="zoom-out">
-              <Image src="/img/portfolio/portfolio03.jpg" alt="Portfolio" width={1200} height={1200} />
+              <Image src="/img/home/abtt.png" alt="Portfolio" width={1200} height={1200} />
             </div>
             <div className="is-small bringer-masked-block" data-appear="zoom-out" data-delay="200" data-unload="zoom-out">
               <div className="bringer-bento-hero-media bringer-masked-media">
-                <Image src="/img/portfolio/portfolio06.jpg" alt="Portfolio" width={1200} height={1200} />
+                <Image src="/img/home/abt2.png" alt="Portfolio" width={1200} height={1200} />
               </div>
               <div className="bringer-masked-content at-bottom-right">
                 <Link href="/portfolio-grid" className="bringer-square-button">
@@ -40,7 +40,7 @@ export default function AboutMe() {
               </div>
             </div>
             <div className="is-large" data-appear="fade-left" data-delay="200" data-unload="fade-right">
-              <Image src="/img/inner-pages/contacts02.jpg" alt="Contact" width={1200} height={1200} />
+              <Image src="/img/inner-pages/ene.jpg" alt="Contact" width={1200} height={1200} />
             </div>
           </div>
         </section>
@@ -49,10 +49,10 @@ export default function AboutMe() {
         <section data-padding="bottom">
           <div className="bringer-grid-4cols bringer-tp-grid-2cols bringer-m-grid-2cols stg-m-small-gap" data-stagger-appear="zoom-in" data-stagger-unload="zoom-out">
             {[
-              { num: "8", suffix: "K+", label: "Happy Customers" },
-              { num: "420", suffix: "", label: "Completed Projects" },
-              { num: "24", suffix: "", label: "Awards Won" },
-              { num: "12", suffix: "+", label: "Years of Experience" },
+              { num: "4", suffix: "K+", label: "Happy Customers" },
+              { num: "220", suffix: "", label: "Completed Projects" },
+              { num: "8", suffix: "", label: "Awards Won" },
+              { num: "6", suffix: "+", label: "Years of Experience" },
             ].map((item, idx) => (
               <div key={idx} className="bringer-counter bringer-block" data-delay="3000">
                 <div className="bringer-counter-number" data-suffix={item.suffix}>{item.num}</div>
@@ -66,9 +66,9 @@ export default function AboutMe() {
         <section className="backlight-top divider-bottom">
           <div className="stg-row stg-large-gap stg-m-normal-gap">
             <div className="stg-col-6 stg-tp-bottom-gap-l stg-m-bottom-gap" data-appear="fade-right" data-unload="fade-left">
-              <Image src="/img/inner-pages/contacts02.jpg" alt="Ene Ochayi" width={1200} height={1200} />
+              <Image src="/img/inner-pages/ene.jpg" alt="Ene Ochayi" width={1200} height={1200} />
             </div>
-            <div className="stg-col-6 stg-vertical-space-between" data-appear="fade-left" data-unload="fade-right">
+            <div className="stg-col-6 stg-vertical-stack stg-gap-2" data-appear="fade-left" data-unload="fade-right">
               <h2>Documenting Humanity Through Lens</h2>
               <p>I’m Ene Ochayi, a Nigerian-based documentary photographer and visual storyteller dedicated to capturing the resilience, culture, and everyday life of rural and underrepresented communities.</p>
               <p>Through visual storytelling, I spotlight the dignity of people often left out of mainstream narratives. I’ve worked with non-profits like the Samuel Ioron Foundation and Project Build A School—using my lens to advocate for education, gender equality, and social impact.</p>
@@ -93,11 +93,26 @@ export default function AboutMe() {
           </div>
           <div className="bringer-grid-3cols bringer-tp-grid-2cols" data-stagger-appear="fade-up" data-delay="100" data-stagger-delay="100" data-unload="fade-up">
             {[
-              { title: "Branding", desc: "Weave visual stories..." },
-              { title: "Marketing", desc: "Design data-driven campaigns..." },
-              { title: "Graphic Design", desc: "Craft visual masterpieces..." },
-              { title: "Web Design", desc: "Sculpt user-friendly websites..." },
-              { title: "Content Creation", desc: "Weave compelling narratives..." },
+              {
+                title: "Photoshoots",
+                desc: "Professional portraits and on-location shoots that capture raw emotion, cultural identity, and authentic moments with intentional depth.",
+              },
+              {
+                title: "Documentary",
+                desc: "In-depth visual documentation of communities, events, and social issues—designed to tell real stories and drive awareness.",
+              },
+              {
+                title: "Creative Content",
+                desc: "Visually engaging images crafted for digital campaigns, publications, and projects that demand storytelling with soul.",
+              },
+              {
+                title: "Story Telling",
+                desc: "Narrative-driven photography that blends context, emotion, and atmosphere to communicate powerful human-centered stories.",
+              },
+              {
+                title: "Content Creation",
+                desc: "Thoughtfully curated visuals tailored for NGOs, brands, and social causes—amplifying voices and sparking meaningful engagement.",
+              },
             ].map((svc, idx) => (
               <div key={idx} className="bringer-block stg-aspect-square stg-vertical-space-between">
                 <h5>{svc.title}<span className="bringer-accent">.</span></h5>
@@ -121,8 +136,8 @@ export default function AboutMe() {
               {[
                 {
                   text: "Before working with Bringer, our brand felt lost…",
-                  name: "Sarah Janson",
-                  meta: "CEO of Bloom Eco-Spa",
+                  name: "Brooke Tweddell",
+                  meta: "Media Director, Ign633 Abroad",
                   stars: "5"
                 },
                 {

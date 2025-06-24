@@ -2,8 +2,18 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+    const pathname = usePathname();
+
+    const isActive = (path: string | string[]) => {
+        if (Array.isArray(path)) {
+            return path.some(p => pathname.startsWith(p));
+        }
+        return pathname === path;
+    };
+
     return (
         <header id="bringer-header" className="is-frosted is-sticky" data-appear="fade-down" data-unload="fade-up">
             <div className="bringer-header-inner">
@@ -17,53 +27,22 @@ const Header = () => {
                 {/* Navigation */}
                 <nav className="bringer-nav">
                     <ul className="main-menu">
-                        <li className="current-menu-parent">
-
-                            {/* Home */}
+                        <li className={isActive("/") ? "current-menu-parent" : ""}>
                             <Link href="/">Home</Link>
-                            {/* <ul className="sub-menu">
-                                <li><Link href="/">Home 01</Link></li>
-                                <li><Link href="/home02">Home 02</Link></li>
-                                <li><Link href="/home03">Home 03</Link></li>
-                            </ul> */}
                         </li>
 
-                        {/* About Us */}
-                        <li>
+                        <li className={isActive("/about-me") ? "current-menu-parent" : ""}>
                             <Link href="/about-me">About</Link>
-                            {/* <ul className="sub-menu"> */}
-                                {/* <li><Link href="/about-us">About Us</Link></li> */}
-                                {/* <li><Link href="">About Me</Link></li> */}
-                            {/* </ul> */}
                         </li>
 
-                        {/* Pages */}
-                        {/* <li>
-                            <Link href="#">Pages</Link>
-                            <ul className="sub-menu">
-                                <li><Link href="/services">Our Services</Link></li>
-                                <li><Link href="/service-details">Service Details</Link></li>
-                                <li><Link href="/pricing">Pricing</Link></li>
-                                <li><Link href="/faq">F.A.Q.</Link></li>
-                                <li><Link href="/testimonials">Testimonials</Link></li>
-                            </ul>
-                        </li> */}
-
-                        {/* Portfolio */}
-                        <li>
+                        <li className={isActive(["/portfolio", "/portfolio-post01"]) ? "current-menu-parent" : ""}>
                             <Link href="#">Portfolio</Link>
                             <ul className="sub-menu">
-                                {/* <li><Link href="/portfolio-infinite-list">Infinite List</Link></li>
-                                <li><Link href="/portfolio-slider">Slider</Link></li>
-                                <li><Link href="/portfolio-column">Column Cards</Link></li>
-                                <li><Link href="/portfolio-grid">Classic Grid</Link></li>
-                                <li className="bringer-menu-divider"></li> */}
                                 <li><Link href="/portfolio-post01">Portfolio Details 01</Link></li>
-                                {/* <li><Link href="/portfolio-post02">Portfolio Details 02</Link></li>
-                                <li><Link href="/portfolio-post03">Portfolio Details 03</Link></li> */}
                             </ul>
                         </li>
-                        <li>
+
+                        <li className={isActive("/contact") ? "current-menu-parent" : ""}>
                             <Link href="/contact">Contacts</Link>
                         </li>
                     </ul>
