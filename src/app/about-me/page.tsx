@@ -22,9 +22,9 @@ export default function AboutMe() {
             <div className="is-medium bringer-block stg-vertical-space-between" data-appear="fade-right" data-unload="fade-left">
               <div className="bringer-title-with-label stg-bottom-gap">
                 <span className="bringer-label">Who am I? I am</span>
-                <h2>Michael Bringer,</h2>
+                <h2>Ene Ochayi,</h2>
               </div>
-              <p className="bringer-large-text">A creative digital artist, web designer, and developer from Denver, Colorado.</p>
+              <p className="bringer-large-text">A documentary photographer and visual storyteller based in Nigeria, capturing the untold stories of rural life and resilient communities</p>
             </div>
             <div className="is-small" data-appear="zoom-out" data-delay="100" data-unload="zoom-out">
               <Image src="/img/portfolio/portfolio03.jpg" alt="Portfolio" width={1200} height={1200} />
@@ -51,7 +51,7 @@ export default function AboutMe() {
             {[
               { num: "8", suffix: "K+", label: "Happy Customers" },
               { num: "420", suffix: "", label: "Completed Projects" },
-              { num: "24", suffix: "", label: "Awwwards Won" },
+              { num: "24", suffix: "", label: "Awards Won" },
               { num: "12", suffix: "+", label: "Years of Experience" },
             ].map((item, idx) => (
               <div key={idx} className="bringer-counter bringer-block" data-delay="3000">
@@ -66,22 +66,24 @@ export default function AboutMe() {
         <section className="backlight-top divider-bottom">
           <div className="stg-row stg-large-gap stg-m-normal-gap">
             <div className="stg-col-6 stg-tp-bottom-gap-l stg-m-bottom-gap" data-appear="fade-right" data-unload="fade-left">
-              <Image src="/img/inner-pages/contacts02.jpg" alt="About Me" width={1200} height={1200} />
+              <Image src="/img/inner-pages/contacts02.jpg" alt="Ene Ochayi" width={1200} height={1200} />
             </div>
             <div className="stg-col-6 stg-vertical-space-between" data-appear="fade-left" data-unload="fade-right">
-              <h2>Weaving Dreams from Denver to the World</h2>
-              <p>The flickering glow of neon signs was my lullaby…</p>
-              <p>My thirst for creation led me to MIT…</p>
+              <h2>Documenting Humanity Through Lens</h2>
+              <p>I’m Ene Ochayi, a Nigerian-based documentary photographer and visual storyteller dedicated to capturing the resilience, culture, and everyday life of rural and underrepresented communities.</p>
+              <p>Through visual storytelling, I spotlight the dignity of people often left out of mainstream narratives. I’ve worked with non-profits like the Samuel Ioron Foundation and Project Build A School—using my lens to advocate for education, gender equality, and social impact.</p>
+              <p>Rooted in compassion and shaped by my experiences across Benue State, my photography strives to inspire empathy, preserve cultural identity, and elevate unheard voices.</p>
               <Link href="/portfolio-slider" className="bringer-icon-link">
                 <div className="bringer-icon-wrap"><span className="bringer-icon bringer-icon-explore"></span></div>
                 <div className="bringer-icon-link-content">
-                  <h6>Unleash your <br /> Creative desire</h6>
+                  <h6>See life <br /> through my lens</h6>
                   <span className="bringer-label">Explore portfolio</span>
                 </div>
               </Link>
             </div>
           </div>
         </section>
+
 
         {/* What Do I Offer */}
         <section className="backlight-bottom">
